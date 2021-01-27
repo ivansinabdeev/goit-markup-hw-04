@@ -147,8 +147,21 @@ img {
 /* Hero studio */
 
 .hero-section {
+  max-width: 1600px;
+  height: 600px;
+  outline: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  background-color: var(--background-footer-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/index/img-hero.jpg);
+  background-color: var(--background-hero-img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .hero {
   padding-top: 200px;
