@@ -131,6 +131,8 @@ img {
   margin-right: 0px;
 }
 .tel-mail {
+  display: inline-flex;
+  align-items: center;
   color: var(--ouwer-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -141,6 +143,26 @@ img {
 .tel-mail:focus {
   color: var(--acent-color);
 }
+.tel-icon {
+  width: 10px;
+  height: 16px;
+}
+/* .tel::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  background-image: url(../image/icon/smartphone.svg);
+  background-size: contain;
+  margin-right: 10px;
+}
+.mail::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  background-image: url(../image/icon/envelope.svg);
+  background-size: contain;
+  margin-right: 10px;
+} */
 
 /* studio */
 
