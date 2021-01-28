@@ -19,6 +19,7 @@ html {
   --background-section: #e5e5e5;
   --line-color: #ececec;
   --background-color: #ffffff;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -78,7 +79,6 @@ img {
   display: flex;
   align-items: center;
   height: 80px;
-  /* margin-bottom: 77px; */
 }
 .logo {
   color: var(--logo-color-text);
@@ -233,13 +233,32 @@ img {
 }
 .features-item {
   width: 270px;
-  height: 101px;
   margin-right: 30px;
 }
 .features-item:last-child {
   margin-right: 0px;
 }
-.features-item::before {
+
+.title-hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.features-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-title::before {
   content: "";
   display: block;
   height: 120px;
@@ -260,25 +279,6 @@ img {
 }
 .icon-astronaut::before {
   background-image: url(../image/icon/astronaut\ 1.png);
-}
-.title-hide {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-.features-title {
-  margin-top: 0px;
-  margin-bottom: 10px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
 }
 .features-text {
   margin-top: 0px;
@@ -333,7 +333,6 @@ img {
 .card-team {
   background-color: var(--background-color);
   width: 270px;
-  height: 368px;
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -369,7 +368,42 @@ img {
 .social {
   display: flex;
   justify-content: center;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.social-link:last-child {
+  margin-right: 0px;
+}
+.social-item {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+.social-icon {
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+.social-item:hover .social-icon,
+.social-item:focus .social-icon {
+  background-color: var(--acent-color);
+  fill: var(--secondary-text-color);
+}
+
 /* portfolio */
 
 /* filters portfolio */
