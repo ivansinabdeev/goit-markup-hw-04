@@ -404,6 +404,74 @@ img {
   fill: var(--secondary-text-color);
 }
 
+/* Постоянные клиенты */
+
+.client-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  margin-right: 30px;
+  cursor: pointer;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+.client-link:last-child {
+  margin-left: 0px;
+}
+.client-icon {
+  display: flex;
+  justify-content: center;
+  fill: var(--icon-color);
+}
+.logo-1 {
+  width: 44.27px;
+  height: 49.23px;
+}
+.logo-2 {
+  width: 40px;
+  height: 52px;
+}
+.logo-3 {
+  width: 41px;
+  height: 42.6px;
+}
+.logo-4 {
+  width: 79.66px;
+  height: 42.02px;
+}
+.logo-5 {
+  width: 59px;
+  height: 47px;
+}
+.logo-6 {
+  width: 88.48px;
+  height: 45.44px;
+}
+.client-link:hover .client-icon:hover,
+.client-link:focus .client-icon:focus {
+  fill: var(--acent-color);
+}
+
 /* portfolio */
 
 /* filters portfolio */
@@ -530,4 +598,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+.footer-social-link {
+  display: flex;
 }
