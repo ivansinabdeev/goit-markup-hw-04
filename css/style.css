@@ -140,32 +140,25 @@ img {
   font-size: 14px;
   letter-spacing: 0.02em;
 }
-.tel-mail:hover,
-.tel-mail:focus {
+.tel-mail:hover .tel-icon,
+.tel-mail:focus .tel-icon {
   color: var(--acent-color);
-}
-.tel-icon {
-  width: 10px;
-  height: 16px;
-  fill: red;
+  fill: var(--acent-color);
 }
 
-/* .tel::before {
-  content: "";
-  width: 10px;
-  height: 16px;
-  background-image: url(../image/icon/smartphone.svg);
-  background-size: contain;
+/* .kontakt-nav .item .tel-mail:hover {
+  color: var(--acent-color);
+  fill: var(--acent-color);
+} */
+
+.tel-icon {
+  fill: var(--ouwer-text-color);
   margin-right: 10px;
 }
-.mail::before {
-  content: "";
-  width: 16px;
-  height: 12px;
-  background-image: url(../image/icon/envelope.svg);
-  background-size: contain;
-  margin-right: 10px;
-} */
+/* .tel-icon:hover,
+.tel-icon:focus {
+  color: var(--acent-color);
+  fill: var(--acent-color); */
 
 /* studio */
 
@@ -379,27 +372,27 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  margin-right: 10px;
   border-radius: 50%;
   cursor: pointer;
-  border: 1px solid black;
+  fill: var(--icon-color);
 }
 .social-link:last-child {
   margin-right: 0px;
 }
 .social-item {
   display: flex;
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 .social-icon {
   align-items: center;
   width: 20px;
   height: 20px;
-  fill: var(--icon-color);
 }
-.social-item:hover .social-icon,
-.social-item:focus .social-icon {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--acent-color);
   fill: var(--secondary-text-color);
 }
@@ -433,6 +426,7 @@ img {
   margin-right: 30px;
   cursor: pointer;
   border: 1px solid var(--icon-color);
+  fill: var(--icon-color);
   border-radius: 4px;
 }
 .client-link:last-child {
@@ -441,7 +435,6 @@ img {
 .client-icon {
   display: flex;
   justify-content: center;
-  fill: var(--icon-color);
 }
 .logo-1 {
   width: 44.27px;
@@ -467,9 +460,10 @@ img {
   width: 88.48px;
   height: 45.44px;
 }
-.client-link:hover .client-icon:hover,
-.client-link:focus .client-icon:focus {
+.client-link:hover,
+.client-link:focus {
   fill: var(--acent-color);
+  border: 1px solid var(--acent-color);
 }
 
 /* portfolio */
